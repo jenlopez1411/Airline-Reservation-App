@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReserveSeatActivity">
+
+    <TextView
+        android:id="@+id/reserveseatinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reserveseatinfo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <EditText
+        android:id="@+id/resversteaDeparture"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/reserveseatdeparture"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reserveseatinfo"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <EditText
+        android:id="@+id/reserveseatArrival"
+        android:layout_width="217dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/reserveseatArrival"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resversteaDeparture"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <EditText
+        android:id="@+id/reserveseatnumberofseats"
+        android:layout_width="218dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/reserveseatNumbertickets"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reserveseatArrival"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <Button
+        android:id="@+id/mReserveSeatBtn"
+        android:layout_width="393dp"
+        android:layout_height="42dp"
+        android:text="@string/reserveseatSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reserveseatnumberofseats"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <ListView
+        android:id="@+id/ListReserve"
+        android:layout_width="399dp"
+        android:layout_height="311dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mReserveSeatBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/mreserveflightbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reservebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListReserve" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
